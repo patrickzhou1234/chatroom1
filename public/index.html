@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="socket.io.js"></script>
+  </head>
+  <body>
+    <input placeholder="Your username" id="username" autofocus onkeypress="checkinput(event)" autocomplete="off">
+    <button id="submit" onclick="usernamehandle()">Submit</button>
+    <p id="chatbox"></p>
+    <input id="message" placeholder="Type a message..." autocomplete="off" onkeypress="checkmsginput(event)">
+    <img id="chatbtn" onclick="sendmsg()" src="chatbtn.png">
+    <script src="script.js"></script>
+  </body>
+</html>
